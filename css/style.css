@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*
+Color Scheme
+Pallete
+#DE5837 (Red)
+#66B032 (Green)
+#FFFFFF (White)
+#DDFFC4 (light Green)
+#380B00 (Dark Brown)
+*/
+
+
+html {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 390px;
+    max-width: 1280px;
+    color: #380B00;
+    box-shadow: 0 0 20px #DDFFC4;
+}
+
+/* Header style */
+.nav-item > a {
+    color: #FFFFFF;
+}
+.title-bar {
+    background-color: #DE5837;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    font-family: "Times New Roman", Georgia, Serif;
+    letter-spacing: 4px;
+    padding: 15px;
+}
+
+.company-name {
+    background: rgb(0, 143, 57);
+    background: linear-gradient(90deg, rgba(0, 143, 57, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    box-shadow: 0 0 5px #DDFFC4;
+    font-weight: bold;
+    padding: 10px;
+    color: #380B00;
+}
+
+/*Add shadow on hover*/
+.title-bar a:hover {
+    /* box-shadow: 0 0 5px rgba(0, 143, 57, 1); */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* End Header style */
+
+/* Main Content */
+h3 {
+    color: #66B032;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main {
+    margin: 5px;
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+#date-field {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.9949229691876751) 0%, rgba(0, 143, 57, 1) 100%);
+    color: white;
+}
+
+#area {
+    margin: 0 auto;
+    min-width: 390px;
+    max-width: 1080px;
+    color: black;
+    padding: 5px;
+}
+/* End */
+
+/* Buttons styles */
+
+.button-submit-reset {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-send {
+    background-color: #66B032;
+}
+
+.btn-noSend {
+    background-color: #DE5837;
+}
+
+.btn-noSend > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-logout {
+    background-color: rgb(255, 199, 94);
+    padding: 5px;
+    float: right;
+}
+
+.btn-send, .btn-noSend, .btn-logout {
+    font-size: large;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: 20px;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.btn-send:hover {
+    background-color: #468e13;
+}
+
+.btn-noSend:hover {
+    background-color: #9f371d;
+}
+
+.btn-logout:hover {
+    background-color: orange;
+}
+
+.btn-send:hover, .btn-noSend:hover, .btn-logout:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* End Buttons styles */
+
+/* Table Style */
+
+.table-view {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-view thead tr {
+    background-color: #66B032;
+    color: #EBF7E3;
+    font-weight: bold;
+}
+
+.table-view th {
+    padding: 12px 15px;
+}
+
+.table-view tbody tr { /* Set the color of the line of each row */
+    border-bottom: 1px solid #66B032;
+}
+
+th, td {
+    text-align: center;
+}
+
+.table-view tbody tr:nth-of-type(even) {
+    background-color: #E4F7EB;
+}
+
+
+.table-view tbody tr:last-of-type { /* Set the color of the last line of the table */
+    border-bottom: 2px solid #66B032;
+}
+
+.table-view tbody tr:hover {
+    background-color: #9BD770;
+}
+/* End Table Style */
+
+/* Form Style */
+.main-content {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+
+/* Divs index */
+.registration {
+    text-align: center;
+    padding: 2px;
+}
+
+.loginIndex {
+    align-items: center;
+    height: 100%;
+}
+
+.signIn, .updateProfilePage {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+}
+
+.tittle {
+    padding-bottom: 5%;
+}
+
+/* Forms */
+.formRegistration {
+    /* background-color: darkgray; */
+    padding-top: 5%;
+}
+.formLogin {
+    height: 400px;
+    padding-top: 130px;
+}
+
+.formSignIn {
+    width: 600px;
+}
+
+.formUpdate {
+    background-color: #DDFFC4;
+    margin: 0 20% 0 20%;
+}
+
+.orderPizzaNossa {
+    background-color: #DDFFC4;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formRegistration, .formLogin {
+    box-shadow: 0 0 5px #DDFFC4;
+    border-radius: 5px;
+    background-color: #DDFFC4;
+}
+
+
+/* Inputs */
+.register-form, .signInForm {
+    margin: 5px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.register-form-payment, .profile-image {
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+
+.msg-update-delete {
+    background-color: #DDFFC4;
+}
+/* End */
+
+/* Footer style */
+footer {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #66B032;
+    background-color: #380B00;
+    height: 65px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #66B032;
+}
+
+/*Add shadow on hover*/
+footer a:hover {
+    box-shadow: 0 0 5px #66B032;
+    text-decoration: none;
+    font-weight: bold;
+    color: #66B032;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+    .main-content {display: grid;}
+}
